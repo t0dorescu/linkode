@@ -1,0 +1,21 @@
+<style>
+    .zoom-buttons {
+        left: 1rem;
+        top: 1rem;
+    }
+    .zoom-buttons.is-mobile {
+        display: none;
+    }
+</style>
+
+<div 
+    ref="wrapper"
+    class="buttons zoom-buttons"
+>
+    <button ref="zoomInBtn" click="zoomIn">
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+    </button>
+    <button ref="zoomOutBtn" click="zoomOut">
+        <i class="fa-solid fa-magnifying-glass-minus"></i>
+    </button>
+</div>

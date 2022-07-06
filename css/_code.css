@@ -1,0 +1,104 @@
+
+.code-wrapper {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    z-index: 11;
+    transition: all .5s ease-in-out;
+    user-select: none;
+    padding: 0;
+    padding-bottom: 3rem;
+}
+.code-sub-wrapper {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+}
+.code-backdrop {
+    z-index: 4;
+    width: 590px;
+    height: 300px;
+    opacity: .90;
+    background: black;
+    padding-bottom: 1rem;
+    border-radius: .2rem;
+}
+.code-wrapper > h1 {
+    position: absolute;
+    font-family: 'dejavu';
+    top: 0;
+    right: 1rem;
+    font-size: 2rem;
+    user-select: none;
+    z-index: 10;
+}
+.code-sub-wrapper::-webkit-scrollbar-thumb{
+    background: none;
+}
+.code-sub-wrapper::-webkit-scrollbar-thumb:vertical {
+    background: var(--light-color);
+}
+.code-sub-wrapper .code-pre {
+    position: absolute;
+    background: none;
+    font-family: 'dejavu';
+    font-size: 1.07rem;
+    width: auto;
+    min-height: calc(300px - 2rem);
+    margin: 2rem 2rem 0;
+    padding: 0;
+    border-radius: 0.5rem;
+    user-select: text;
+    z-index: 10;
+}
+.code-wrapper .close-icon {
+    top: -2rem !important;
+}
+.code-sub-wrapper .code-pre > *,
+.code-sub-wrapper .code-pre > * > ,
+.code-sub-wrapper .code-pre > * > * > ,
+.code-sub-wrapper .code-pre > * > * > * > * {
+    z-index: 10;
+    text-shadow: 0 0 5px var(--light-color);
+    font-family: 'dejavu' !important;
+}
+.code-sub-wrapper .code-pre.sh_html > *::selection,
+.code-sub-wrapper .code-pre.sh_html > * > ::selection,
+.code-sub-wrapper .code-pre.sh_html > * > * > ::selection,
+.code-sub-wrapper .code-pre.sh_html > * > * > * > ::selection,
+.code-sub-wrapper .code-pre.sh_html::selection {
+    background: var(--html-color);
+    color: var(--dark-color);
+}
+.code-sub-wrapper .code-pre.sh_css > *::selection,
+.code-sub-wrapper .code-pre.sh_css > * > ::selection,
+.code-sub-wrapper .code-pre.sh_css > * > * > ::selection,
+.code-sub-wrapper .code-pre.sh_css > * > * > * > ::selection,
+.code-sub-wrapper .code-pre.sh_css::selection {
+    background: var(--css-color);
+    color: var(--dark-color);
+}
+.code-sub-wrapper .code-pre.sh_javascript > *::selection,
+.code-sub-wrapper .code-pre.sh_javascript > * > ::selection,
+.code-sub-wrapper .code-pre.sh_javascript > * > * > ::selection,
+.code-sub-wrapper .code-pre.sh_javascript > * > * > * > ::selection,
+.code-sub-wrapper .code-pre.sh_javascript::selection {
+    background: var(--js-color);
+    color: var(--dark-color);
+}
+
+/*************************************/
+
+pre.sh_sourceCode, 
+pre.sh_sourceCode .sh_type {
+    color:  var(--html-color);
+}
+pre.sh_sourceCode .sh_string,
+pre.sh_sourceCode .sh_value {
+    color: var(--js-color);
+}
+pre.sh_sourceCode .sh_selector,
+pre.sh_sourceCode .sh_function,
+pre.sh_sourceCode .sh_keyword {
+    color: var(--css-color);
+}

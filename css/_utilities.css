@@ -1,0 +1,16 @@
+
+.hide { display: none !important;}
+.show { display: block !important; }
+.fade-in { animation: fadeIn var(--timeout-time) ease-in; }
+
+.scroll-x { overflow-x: auto; }
+.scroll-y { overflow-y: auto; }
+
+.elipsis {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

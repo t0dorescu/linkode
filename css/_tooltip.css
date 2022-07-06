@@ -1,0 +1,45 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: var(--light-color);
+    font-family: 'Arial';
+    font-weight: bold;
+    color: var(--dark-color);
+    text-align: center;
+    border-radius: .4rem;
+    width: 13rem;
+    padding: .5rem;
+    font-size: .9rem;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 5px 2px var(--dark-color);
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext.tooltip-right {
+    top: 0;
+    left: calc(100% + .5rem);
+}
+.tooltip .tooltiptext.tooltip-left {
+    top: .1rem;
+    right: calc(100% + .5rem);
+}
+.tooltip .tooltiptext.tooltip-top {
+    bottom: calc(100% + .5rem);
+    left: -6rem;
+}
+.tooltip .tooltiptext.tooltip-bottom {
+    top: calc(100% + .5rem);
+    left: -6rem;
+}
+
+.tooltiptext.small {
+    width: 5rem;
+    left: -1.25rem !important;
+    top: 3rem !important;
+}
